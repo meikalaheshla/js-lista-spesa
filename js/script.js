@@ -10,4 +10,13 @@ Affettati
 Formaggio
 Verdura
 Frutta*/
+const shoppingList = document.getElementById('shopping-list')
+const shoppingItems = ['Uova', 'pane', 'latte', 'biscotti', 'pasta', 'affettati', 'formaggio', 'verdura', 'frutta'];
+let i = 0;
+let listItem = '';
+while (i < shoppingItems.length) {
+    listItem += `<li>${shoppingItems[i]}</li>`
+    i++;
+}
+shoppingList.innerHTML = listItem;
 
